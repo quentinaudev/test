@@ -1,0 +1,157 @@
+
+
+#page{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#form-box {
+  margin: auto;
+
+    height: fit-content;
+    width: 800px;
+    padding: 2em 3.5em;
+    border-top: 50px solid #e8e8e8;
+    border-left: 2px solid #e8e8e8;
+    border-right: 2px solid #e8e8e8;
+    border-bottom: 2px solid #e8e8e8;
+  }
+  
+  #dd{
+
+    height: content;
+    margin: auto;
+    display: block;
+    /* border: inset red 1px; */
+    width:auto;
+    text-align: center;
+
+  }
+
+  #right {
+
+    height: content;
+    margin: auto;
+    /* display: inline; */
+    /* border: inset red 1px; */
+    text-align: center;
+    margin: auto;
+    margin-bottom: 40px;
+
+  
+  }
+
+
+  /* HIDE RADIO */
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+img {
+  margin-top: 50px;
+  width: 100px;
+  height: 70px;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+  cursor: pointer;
+  outline: 1px solid black;
+  margin-right: 20px;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+  outline: 4px solid #f00;
+}
+
+/* [type=radio]:not(:checked) + img { */
+  /* Add the blur effect */
+  /* filter: blur(8px);
+  -webkit-filter: blur(2px);
+  outline: 0px solid black;
+} */
+
+  #form-title {
+    font-size: 1.6em;
+    padding-bottom: 6px;
+    margin-bottom: 25px;
+    border-bottom: 1.5px solid #e8e8e8;
+  }
+  
+  .form-header {
+    /* font-size: 16px;
+    margin-bottom: 2px; */
+    font-size: 1.6em;
+    padding-bottom: 6px;
+    margin-bottom: 25px;
+    border-bottom: 1.5px solid #e8e8e8;
+  }
+  
+  
+  .form-input {
+    width: 70%;
+    height: 30px;
+    font-size: 16px;
+    padding-left: 6px;
+  }
+  
+  .form-input:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  
+  #check{
+    margin: auto;
+    width: auto;
+    text-align: center;
+  }
+
+  #controls{
+    padding-top: 40px;
+    margin: auto;
+    width: auto;
+  }
+
+  input[type="button"] {
+    -webkit-appearance: button;
+    font-size: 15px;
+    width: 15em;
+    height: 3em;
+    margin-left: 254px;
+    background-color: #e18988;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }  
+
+  input[type="button"]:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+  #annuler {
+    -webkit-appearance: button;
+    font-size: 15px;
+    width: 100px;
+    height: 25px;
+    margin-left: 3em;
+    background-color: #8895e1;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }  
+
+  
+  /* Forces .form-input styles onto search type */
+  input[type="search"] {
+    -webkit-appearance: textfield;
+    box-sizing: content-box;
+  }

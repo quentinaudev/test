@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Checkout</title>
+  <script type="text/javascript">
+  var contrat = "Votre vie privée est importante pour nous \r\n" + 
+   "Lorsque vous visitez notre site, des compagnies pré-sélectionnées peuvent \r\naccéder à certaines informations sur votre appareil et sur cette page \r\n Web et les utiliser pour diffuser des annonces pertinentes ou du contenu personnalisé. Veuillez noter que ces annonces nous permettent de\r\n maintenir notre service gratuit. Les données personnelles seront traitées sur la base du consentement conformément à l'article 6, paragraphe 1, point a) du RGPD \r\n dans le cadre du droit européen, ou en tant qu'intérêt légitime conformément à l'article 6, paragraphe 1, point f) du même règlement."+
+"Comprenez pourquoi vous \r\nvoyez cela " + 
+ "Nous, «l'éditeur» et un groupe de partenaires de \r\nconfiance choisis désignés les «fournisseurs», avons besoin de votre consentement à des fins de traitement des données, telles que la configuration des cookies ou l'accès aux informations sur l'appareil. Cela inclus par exemple, l'accès à votre position et les cookies tiers pour comprendre vos intérêts et vous offrir une meilleure expérience de navigation sur notre site internet.\r\n Cela nous permet de vous montrer des annonces plus pertinentes pour vous ainsi que d'évaluer les paramètres de performance. Afin de gérer ces paramètres de confidentialité, nous utilisons une plateforme de gestion du consentement (PGC) pour obtenir votre consentement explicite. \r\nCes informations relatives au consentement seront stockées sur votre appareil sous forme de cookies codés. Après leur création initiale, vous ne serez plus invité à donner votre consentement à moins que les conditions ne changent. Vous pouvez modifier vos préférences à tout moment.";
+ 
+window.contrat = contrat; 
+ 
+ var cfgApiBaseUrlLocal = "https://localhost/callback";
+    var cfgApiBaseUrlDistant = "https://www.moneycore-psp.com/callback";
+    window.cfgApiBaseUrl = cfgApiBaseUrlLocal;
+  </script>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!--<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+</head>
+<body class="mat-typography">
+  <app-root></app-root>
+  <!-- <app-select-psp></app-select-psp> -->
+  <script src="https://js.stripe.com/v3/">
+  </script> 
+ 
+
+</body>
+</html>

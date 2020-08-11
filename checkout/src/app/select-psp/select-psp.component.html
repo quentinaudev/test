@@ -1,0 +1,56 @@
+
+<script src="https://checkout.stripe.com/checkout.js"></script>
+
+<div id="page">
+<form id="form-box" method="GET" style=" min-height: 50px">
+  <div id="form-title">Détails de la commande</div>
+
+
+<div id="right">  
+  
+  <h3><u>Détails commande</u></h3>
+  <i>Montant: {{montantcommande}}</i>
+  
+
+</div>
+
+  <div class="form-header">Choisissez votre mode de paiement</div>
+
+
+ <div id="dd" >
+  <label>
+    <input (click)="selectedPsp= 1"   type="radio" name="method" value="1" checked>
+    <img src="assets/images/CMI.jpg">
+  </label>
+  
+  <label>
+    <input (click)="selectedPsp = 2"  type="radio" name="method" value="2">
+    <img src="assets/images/MasterCard.jpg">
+  </label>
+  
+  <label>
+    <input  (click)="selectedPsp = 3"  type="radio" name="method" value="3">
+    <img src="assets/images/Visa-logo-1.jpg">
+  </label>
+
+</div>
+
+
+
+<div id="check" [style.visibility]="selectedPsp==1 ? 'visible' : 'hidden'">
+    <input type="checkbox"   id="contrat" name="contrat" [disabled]="selectedPsp!=1"
+     [(ngModel)]="agree">
+ <label for="contrat">I agree to the <a href="" onclick="alert(window.contrat); return false;"> terms and conditions</a></label>
+</div>
+
+<div id="controls">
+    
+  <input [disabled]="!agree && selectedPsp==1" (click)="getCardCheckout()" type="button"  class="btn"  name="next" value="Confirmer" />
+  <input id="annuler" type="button" (click)="annuler()"  class="btn btn-secondary m-2" value="Annuler" />
+
+</div>
+
+
+
+</form>
+</div>
